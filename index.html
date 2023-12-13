@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="//db.onlinewebfonts.com/c/69ff7046faa4bede406ce3c6e0778c37?family=Vanilla+Macchiato" rel="stylesheet"
+        type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Varela+Round&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Satisfy&family=Varela+Round&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Permanent+Marker&family=Satisfy&family=Varela+Round&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Macondo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Yellowtail&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Sacramento&family=Yellowtail&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cookie&family=Mr+Dafoe&family=Sacramento&family=Yellowtail&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Creepster&family=Great+Vibes&family=Kaushan+Script&family=Macondo&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="customNeon d-flex">
+            <div id="app" class="preview">
+                <div class="text">
+                    <h1 id="myHeading" class="flicker neon neon-red"></h1>
+                </div>
+            </div>
+            <div class="userInput my-5 border border-white rounded">
+                <h3>Type Your Text Here</h3>
+                <h2 class="text-light mx-3 " id="price" onclick="price()">₹</h2>
+                <input type="text" id="myInput" value="" class="form__input mx-3" placeholder="Yourname"
+                    oninput="updateHeading()">
+
+
+                <!-- Color Buttons -->
+
+
+                <div class="colorBtn  d-flex justify-content-center align-items-center my-3">
+                    <button type="button" class="btn btn-primary mx-2 rounded-circle"
+                        onclick="changeNeonColor('blue')"></button>
+                    <button type="button" class="btn btn-success mx-2 rounded-circle"
+                        onclick="changeNeonColor('green')"></button>
+                    <button type="button" class="btn btn-danger mx-2 rounded-circle"
+                        onclick="changeNeonColor('red')"></button>
+                    <button type="button" class="btn btn-pink mx-2 rounded-circle"
+                        onclick="changeNeonColor('pink')"></button>
+                    <button type="button" class="btn btn-warning mx-2 rounded-circle"
+                        onclick="changeNeonColor('yellow')"></button>
+                    <button type="button" class="btn btn-info mx-2 rounded-circle"
+                        onclick="changeNeonColor('skyblue')"></button>
+                </div>
+
+
+                <!-- Font Buttons -->
+                <div class="fontBtn d-flex justify-content-center align-items-center my-3 bg-dark p-3 my-2">
+                    <div class="row">
+                        <div class="col my-2 mx-2">
+                            <button type="button" class="btn btn-outline-light mx-2" data-value="Vanilla Macchiato"
+                                onclick="changeFont(this)">Vanilla</button>
+                        </div>
+                        <div class="col my-2 mx-2">
+                            <button type="button" class="btn btn-outline-light mx-2" data-value="Permanent Marker"
+                                onclick="changeFont(this)">Permanent</button>
+                        </div>
+                        <div class="col my-2 mx-2">
+                            <button type="button" class="btn btn-outline-light mx-2" data-value="Great Vibes"
+                                onclick="changeFont(this)">Great</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col my-2 mx-2">
+                            <button type="button" class="btn btn-outline-light mx-2" data-value="Lato"
+                                onclick="changeFont(this)">Lato</button>
+                        </div>
+                        <div class="col my-2 mx-2">
+                            <button type="button" class="btn btn-outline-light mx-2" data-value="Macondo"
+                                onclick="changeFont(this)">Macondo</button>
+                        </div>
+                        <div class="col my-2 mx-2">
+                            <button type="button" class="btn btn-outline-light mx-2" data-value="Kaushan Script"
+                                onclick="changeFont(this)">Kaushan</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col my-2 mx-2">
+                            <button type="button" class="btn btn-outline-light mx-2" data-value="Arial"
+                                onclick="changeFont(this)">Arial</button>
+                        </div>
+                        <div class="col my-2 mx-2">
+                            <button type="button" class="btn btn-outline-light mx-2" data-value="Yellowtail"
+                                onclick="changeFont(this)">Yellowtail</button>
+                        </div>
+                        <div class="col my-2 mx-2">
+                            <button type="button" class="btn btn-outline-light mx-2" data-value="Sacramento"
+                                onclick="changeFont(this)">Sacramento</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col my-2 mx-2">
+                            <button type="button" class="btn btn-outline-light mx-2" data-value="Verdana"
+                                onclick="changeFont(this)">Verdana</button>
+                        </div>
+                        <div class="col my-2 mx-2">
+                            <button type="button" class="btn btn-outline-light mx-2" data-value="Cookie"
+                                onclick="changeFont(this)">Cookie</button>
+                        </div>
+                        <div class="col my-2 mx-2">
+                            <button type="button" class="btn btn-outline-light mx-2" data-value="Mr Dafoe"
+                                onclick="changeFont(this)">Dafoe</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col my-2 mx-2">
+                            <button type="button" class="btn btn-outline-light mx-2" data-value="'Satisfy', cursive"
+                                onclick="changeFont(this)">Satisfy</button>
+                        </div>
+                        <div class="col my-2 mx-2">
+                            <button type="button" class="btn btn-outline-light mx-2" data-value="Dancing Script"
+                                onclick="changeFont(this)">Dancing</button>
+                        </div>
+                        <div class="col my-2 mx-2">
+                            <button type="button" class="btn btn-outline-light mx-2" data-value="Roboto"
+                                onclick="changeFont(this)">Roboto</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Size  -->
+                <div class="container text-light d-flex my-3 justify-content-center">
+                    <div class="card mx-3 border bg-dark text-light">
+                        <div class="card-body">
+                            <h5 class="card-title">Regular</h5>
+                            <p class="card-text">Width: <span id="width1">"</span></p>
+                            <p class="card-text">Height: 10 "</p>
+                        </div>
+                    </div>
+                    <div class="card mx-3 border bg-dark text-light">
+                        <div class="card-body">
+                            <h5 class="card-title">Medium</h5>
+                            <p class="card-text">Width: <span id="width2">"</span></p>
+                            <p class="card-text">Height: 13 "</p>
+                        </div>
+                    </div>
+
+                    <div class="card mx-3 bg-dark text-light border">
+                        <div class="card-body">
+                            <h5 class="card-title">Large</h5>
+                            <p class="card-text">Width: <span id="width3">"</span></p>
+                            <p class="card-text">Height: 15 "</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

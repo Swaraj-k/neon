@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css?family=Gochi+Hand");
+@import url(//db.onlinewebfonts.com/c/69ff7046faa4bede406ce3c6e0778c37?family=Vanilla+Macchiato);
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;700&family=Ubuntu&family=Varela+Round&display=swap");
+
+#app {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+body {
+  /* background-image: url(https://images.unsplash.com/photo-1457092716468-97352752b749?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ); */
+  /* background-position: cover; */
+  /* background-blend-mode: luminosity; */
+  /* background-color: #130415; */
+  background: #252323 !important;
+}
+.text {
+  width: 33vw;
+  height: auto;
+}
+
+h3 {
+  font-weight: 400;
+  color: #fff !important;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  margin-top: 20px !important;
+}
+h1 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 5vw !important;
+  text-align: center;
+  font-family: "Vanilla Macchiato";
+  src: url("//db.onlinewebfonts.com/t/69ff7046faa4bede406ce3c6e0778c37.eot");
+  src: url("//db.onlinewebfonts.com/t/69ff7046faa4bede406ce3c6e0778c37.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/69ff7046faa4bede406ce3c6e0778c37.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/69ff7046faa4bede406ce3c6e0778c37.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/69ff7046faa4bede406ce3c6e0778c37.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/69ff7046faa4bede406ce3c6e0778c37.svg#Vanilla Macchiato")
+      format("svg");
+  color: #fff !important;
+}
+.flicker {
+  animation: flicker 3s linear infinite 3s !important;
+}
+.col >.btn{
+  width: 100%;
+  margin: 3px;
+}
+.neon {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #0ff, 0 0 30px #0ff,
+    0 0 40px #0ff, 0 0 120px #0ff, 0 0 140px #0ff, 0 0 200px #0ff,
+    0 0 500px #0ff !important;
+  color: #0ff;
+}
+@keyframes flicker {
+  0% {
+    text-shadow: none;
+  }
+  6% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #0ff, 0 0 30px #0ff,
+      0 0 40px #0ff, 0 0 120px #0ff, 0 0 140px #0ff, 0 0 200px #0ff,
+      0 0 500px #0ff;
+  }
+  8% {
+    text-shadow: none;
+  }
+  10% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #0ff, 0 0 30px #0ff,
+      0 0 40px #0ff, 0 0 120px #0ff, 0 0 140px #0ff, 0 0 200px #0ff,
+      0 0 500px #0ff;
+  }
+  12% {
+    text-shadow: none;
+  }
+  14% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #0ff, 0 0 30px #0ff,
+      0 0 40px #0ff, 0 0 120px #0ff, 0 0 140px #0ff, 0 0 200px #0ff,
+      0 0 500px #0ff;
+  }
+}
+.form__input {
+  margin-top: 2rem;
+  box-sizing: border-box;
+  background-color: #fff;
+  padding: 0.7rem;
+  border: none;
+  /* font-family: "Gochi Hand", cursive; */
+  font-family: "Vanilla Macchiato";
+  font-size: 1rem;
+  color: hsla(260, 2%, 25%, 0.7);
+  width: 95%;
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #0ff, 0 0 30px #0ff,
+    0 0 40px #0ff;
+  &:focus {
+    outline: none;
+    border: solid 3px #ea95e0;
+  }
+}
+.btn-pink {
+  background-color: #bc6abd !important;
+  border-radius: 10px solid #bc6abd;
+}
+/* Color of neon  */
+.neon-red {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px red, 0 0 30px red,
+    0 0 40px red, 0 0 120px red, 0 0 140px red, 0 0 200px red, 0 0 500px red !important;
+  color: red;
+}
+
+.neon-pink {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px pink, 0 0 30px pink,
+    0 0 40px pink, 0 0 120px pink, 0 0 140px pink, 0 0 200px pink,
+    0 0 500px pink !important;
+  color: pink;
+}
+
+.neon-yellow {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px yellow, 0 0 30px yellow,
+    0 0 40px yellow, 0 0 120px yellow, 0 0 140px yellow, 0 0 200px yellow,
+    0 0 500px yellow !important;
+  color: yellow;
+}
+.neon-blue {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px blue, 0 0 30px yebluellow,
+    0 0 40px blue, 0 0 120px blue, 0 0 140px blue, 0 0 200px blue,
+    0 0 500px blue !important;
+  color: blue;
+}
+.neon-skyblue {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px skyblue, 0 0 30px skyblue,
+    0 0 40px skyblue, 0 0 120px skyblue, 0 0 140px skyblue, 0 0 200px skyblue,
+    0 0 500px skyblue !important;
+  color: skyblue;
+}
+.neon-green {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px green, 0 0 30px green,
+    0 0 40px green, 0 0 120px green, 0 0 140px green, 0 0 200px green,
+    0 0 500px green !important;
+  color: green;
+}
